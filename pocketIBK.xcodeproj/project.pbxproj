@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2E92035C58500DABC36 /* AppDelegate.swift */; };
+		3655A2EC2035C58500DABC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2EB2035C58500DABC36 /* ViewController.swift */; };
+		3655A2EF2035C58500DABC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3655A2ED2035C58500DABC36 /* Main.storyboard */; };
+		3655A2F12035C58500DABC36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3655A2F02035C58500DABC36 /* Assets.xcassets */; };
+		3655A2F42035C58500DABC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3655A2F22035C58500DABC36 /* LaunchScreen.storyboard */; };
+		3655A2FF2035C58500DABC36 /* pocketIBKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2FE2035C58500DABC36 /* pocketIBKTests.swift */; };
+		3655A30A2035C58500DABC36 /* pocketIBKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A3092035C58500DABC36 /* pocketIBKUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3655A2FB2035C58500DABC36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3655A2DE2035C58500DABC36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3655A2E52035C58500DABC36;
+			remoteInfo = pocketIBK;
+		};
+		3655A3062035C58500DABC36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3655A2DE2035C58500DABC36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3655A2E52035C58500DABC36;
+			remoteInfo = pocketIBK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3655A2E62035C58500DABC36 /* pocketIBK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketIBK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3655A2E92035C58500DABC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3655A2EB2035C58500DABC36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3655A2EE2035C58500DABC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3655A2F02035C58500DABC36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3655A2F32035C58500DABC36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3655A2F52035C58500DABC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3655A2FA2035C58500DABC36 /* pocketIBKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pocketIBKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3655A2FE2035C58500DABC36 /* pocketIBKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pocketIBKTests.swift; sourceTree = "<group>"; };
+		3655A3002035C58500DABC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3655A3052035C58500DABC36 /* pocketIBKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pocketIBKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3655A3092035C58500DABC36 /* pocketIBKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pocketIBKUITests.swift; sourceTree = "<group>"; };
+		3655A30B2035C58500DABC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3655A2E32035C58500DABC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A2F72035C58500DABC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A3022035C58500DABC36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3655A2DD2035C58500DABC36 = {
+			isa = PBXGroup;
+			children = (
+				3655A2E82035C58500DABC36 /* pocketIBK */,
+				3655A2FD2035C58500DABC36 /* pocketIBKTests */,
+				3655A3082035C58500DABC36 /* pocketIBKUITests */,
+				3655A2E72035C58500DABC36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3655A2E72035C58500DABC36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3655A2E62035C58500DABC36 /* pocketIBK.app */,
+				3655A2FA2035C58500DABC36 /* pocketIBKTests.xctest */,
+				3655A3052035C58500DABC36 /* pocketIBKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3655A2E82035C58500DABC36 /* pocketIBK */ = {
+			isa = PBXGroup;
+			children = (
+				3655A2E92035C58500DABC36 /* AppDelegate.swift */,
+				3655A2EB2035C58500DABC36 /* ViewController.swift */,
+				3655A2ED2035C58500DABC36 /* Main.storyboard */,
+				3655A2F02035C58500DABC36 /* Assets.xcassets */,
+				3655A2F22035C58500DABC36 /* LaunchScreen.storyboard */,
+				3655A2F52035C58500DABC36 /* Info.plist */,
+			);
+			path = pocketIBK;
+			sourceTree = "<group>";
+		};
+		3655A2FD2035C58500DABC36 /* pocketIBKTests */ = {
+			isa = PBXGroup;
+			children = (
+				3655A2FE2035C58500DABC36 /* pocketIBKTests.swift */,
+				3655A3002035C58500DABC36 /* Info.plist */,
+			);
+			path = pocketIBKTests;
+			sourceTree = "<group>";
+		};
+		3655A3082035C58500DABC36 /* pocketIBKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3655A3092035C58500DABC36 /* pocketIBKUITests.swift */,
+				3655A30B2035C58500DABC36 /* Info.plist */,
+			);
+			path = pocketIBKUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3655A2E52035C58500DABC36 /* pocketIBK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3655A30E2035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBK" */;
+			buildPhases = (
+				3655A2E22035C58500DABC36 /* Sources */,
+				3655A2E32035C58500DABC36 /* Frameworks */,
+				3655A2E42035C58500DABC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pocketIBK;
+			productName = pocketIBK;
+			productReference = 3655A2E62035C58500DABC36 /* pocketIBK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3655A2F92035C58500DABC36 /* pocketIBKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3655A3112035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKTests" */;
+			buildPhases = (
+				3655A2F62035C58500DABC36 /* Sources */,
+				3655A2F72035C58500DABC36 /* Frameworks */,
+				3655A2F82035C58500DABC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3655A2FC2035C58500DABC36 /* PBXTargetDependency */,
+			);
+			name = pocketIBKTests;
+			productName = pocketIBKTests;
+			productReference = 3655A2FA2035C58500DABC36 /* pocketIBKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3655A3042035C58500DABC36 /* pocketIBKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3655A3142035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKUITests" */;
+			buildPhases = (
+				3655A3012035C58500DABC36 /* Sources */,
+				3655A3022035C58500DABC36 /* Frameworks */,
+				3655A3032035C58500DABC36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3655A3072035C58500DABC36 /* PBXTargetDependency */,
+			);
+			name = pocketIBKUITests;
+			productName = pocketIBKUITests;
+			productReference = 3655A3052035C58500DABC36 /* pocketIBKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3655A2DE2035C58500DABC36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Jakob;
+				TargetAttributes = {
+					3655A2E52035C58500DABC36 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					3655A2F92035C58500DABC36 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3655A2E52035C58500DABC36;
+					};
+					3655A3042035C58500DABC36 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3655A2E52035C58500DABC36;
+					};
+				};
+			};
+			buildConfigurationList = 3655A2E12035C58500DABC36 /* Build configuration list for PBXProject "pocketIBK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3655A2DD2035C58500DABC36;
+			productRefGroup = 3655A2E72035C58500DABC36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3655A2E52035C58500DABC36 /* pocketIBK */,
+				3655A2F92035C58500DABC36 /* pocketIBKTests */,
+				3655A3042035C58500DABC36 /* pocketIBKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3655A2E42035C58500DABC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3655A2F42035C58500DABC36 /* LaunchScreen.storyboard in Resources */,
+				3655A2F12035C58500DABC36 /* Assets.xcassets in Resources */,
+				3655A2EF2035C58500DABC36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A2F82035C58500DABC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A3032035C58500DABC36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3655A2E22035C58500DABC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3655A2EC2035C58500DABC36 /* ViewController.swift in Sources */,
+				3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A2F62035C58500DABC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3655A2FF2035C58500DABC36 /* pocketIBKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3655A3012035C58500DABC36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3655A30A2035C58500DABC36 /* pocketIBKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3655A2FC2035C58500DABC36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3655A2E52035C58500DABC36 /* pocketIBK */;
+			targetProxy = 3655A2FB2035C58500DABC36 /* PBXContainerItemProxy */;
+		};
+		3655A3072035C58500DABC36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3655A2E52035C58500DABC36 /* pocketIBK */;
+			targetProxy = 3655A3062035C58500DABC36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3655A2ED2035C58500DABC36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3655A2EE2035C58500DABC36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3655A2F22035C58500DABC36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3655A2F32035C58500DABC36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3655A30C2035C58500DABC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3655A30D2035C58500DABC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3655A30F2035C58500DABC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pocketIBK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3655A3102035C58500DABC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pocketIBK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3655A3122035C58500DABC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pocketIBKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pocketIBK.app/pocketIBK";
+			};
+			name = Debug;
+		};
+		3655A3132035C58500DABC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = pocketIBKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pocketIBK.app/pocketIBK";
+			};
+			name = Release;
+		};
+		3655A3152035C58500DABC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = pocketIBKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = pocketIBK;
+			};
+			name = Debug;
+		};
+		3655A3162035C58500DABC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = pocketIBKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sengaro.pocketIBKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = pocketIBK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3655A2E12035C58500DABC36 /* Build configuration list for PBXProject "pocketIBK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3655A30C2035C58500DABC36 /* Debug */,
+				3655A30D2035C58500DABC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3655A30E2035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3655A30F2035C58500DABC36 /* Debug */,
+				3655A3102035C58500DABC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3655A3112035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3655A3122035C58500DABC36 /* Debug */,
+				3655A3132035C58500DABC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3655A3142035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3655A3152035C58500DABC36 /* Debug */,
+				3655A3162035C58500DABC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3655A2DE2035C58500DABC36 /* Project object */;
+}
