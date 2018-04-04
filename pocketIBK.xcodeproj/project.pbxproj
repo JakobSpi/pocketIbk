@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3627B74D206E9EF8001441FA /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3627B74C206E9EF8001441FA /* MainTableViewCell.swift */; };
 		3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2E92035C58500DABC36 /* AppDelegate.swift */; };
 		3655A2EC2035C58500DABC36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2EB2035C58500DABC36 /* ViewController.swift */; };
 		3655A2EF2035C58500DABC36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3655A2ED2035C58500DABC36 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		3655A2F42035C58500DABC36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3655A2F22035C58500DABC36 /* LaunchScreen.storyboard */; };
 		3655A2FF2035C58500DABC36 /* pocketIBKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2FE2035C58500DABC36 /* pocketIBKTests.swift */; };
 		3655A30A2035C58500DABC36 /* pocketIBKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A3092035C58500DABC36 /* pocketIBKUITests.swift */; };
+		81636671183C1D2C4B8069A6 /* Pods_pocketIBK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D481EBDDABF19B24B6F5C27 /* Pods-pocketIBK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketIBK.release.xcconfig"; path = "Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK.release.xcconfig"; sourceTree = "<group>"; };
+		3627B74C206E9EF8001441FA /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		3655A2E62035C58500DABC36 /* pocketIBK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pocketIBK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3655A2E92035C58500DABC36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3655A2EB2035C58500DABC36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		3655A3052035C58500DABC36 /* pocketIBKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pocketIBKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3655A3092035C58500DABC36 /* pocketIBKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pocketIBKUITests.swift; sourceTree = "<group>"; };
 		3655A30B2035C58500DABC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		573EEAC3F19599E190AC1064 /* Pods-pocketIBK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketIBK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK.debug.xcconfig"; sourceTree = "<group>"; };
+		806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pocketIBK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81636671183C1D2C4B8069A6 /* Pods_pocketIBK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3627B748206E9BB5001441FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3627B749206E9C05001441FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3627B74C206E9EF8001441FA /* MainTableViewCell.swift */,
+			);
+			name = Views;
+			path = pocketIBK/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		3627B74A206E9C16001441FA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3627B74B206E9C55001441FA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		3655A2DD2035C58500DABC36 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +118,8 @@
 				3655A2FD2035C58500DABC36 /* pocketIBKTests */,
 				3655A3082035C58500DABC36 /* pocketIBKUITests */,
 				3655A2E72035C58500DABC36 /* Products */,
+				9203E029BAC5ED14BBECED82 /* Pods */,
+				B49BE47529B61BA70E0407AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +136,10 @@
 		3655A2E82035C58500DABC36 /* pocketIBK */ = {
 			isa = PBXGroup;
 			children = (
+				3627B74B206E9C55001441FA /* Network */,
+				3627B74A206E9C16001441FA /* Controller */,
+				3627B749206E9C05001441FA /* Views */,
+				3627B748206E9BB5001441FA /* Models */,
 				3655A2E92035C58500DABC36 /* AppDelegate.swift */,
 				3655A2EB2035C58500DABC36 /* ViewController.swift */,
 				3655A2ED2035C58500DABC36 /* Main.storyboard */,
@@ -125,6 +168,23 @@
 			path = pocketIBKUITests;
 			sourceTree = "<group>";
 		};
+		9203E029BAC5ED14BBECED82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				573EEAC3F19599E190AC1064 /* Pods-pocketIBK.debug.xcconfig */,
+				0D481EBDDABF19B24B6F5C27 /* Pods-pocketIBK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B49BE47529B61BA70E0407AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3655A30E2035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBK" */;
 			buildPhases = (
+				C0DFEB5608F0DC14E7EFBB6B /* [CP] Check Pods Manifest.lock */,
 				3655A2E22035C58500DABC36 /* Sources */,
 				3655A2E32035C58500DABC36 /* Frameworks */,
 				3655A2E42035C58500DABC36 /* Resources */,
+				6A5A6464ACD450A3441D2A4A /* [CP] Embed Pods Frameworks */,
+				C55EFFA814CB05252D620992 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +317,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A5A6464ACD450A3441D2A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0DFEB5608F0DC14E7EFBB6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pocketIBK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C55EFFA814CB05252D620992 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3655A2E22035C58500DABC36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3655A2EC2035C58500DABC36 /* ViewController.swift in Sources */,
+				3627B74D206E9EF8001441FA /* MainTableViewCell.swift in Sources */,
 				3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +534,7 @@
 		};
 		3655A30F2035C58500DABC36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573EEAC3F19599E190AC1064 /* Pods-pocketIBK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pocketIBK/Info.plist;
@@ -420,6 +547,7 @@
 		};
 		3655A3102035C58500DABC36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D481EBDDABF19B24B6F5C27 /* Pods-pocketIBK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pocketIBK/Info.plist;
@@ -503,6 +631,7 @@
 				3655A3102035C58500DABC36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3655A3112035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +640,7 @@
 				3655A3132035C58500DABC36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3655A3142035C58500DABC36 /* Build configuration list for PBXNativeTarget "pocketIBKUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +649,7 @@
 				3655A3162035C58500DABC36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
