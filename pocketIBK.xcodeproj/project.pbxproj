@@ -16,6 +16,11 @@
 		3655A2FF2035C58500DABC36 /* pocketIBKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A2FE2035C58500DABC36 /* pocketIBKTests.swift */; };
 		3655A30A2035C58500DABC36 /* pocketIBKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3655A3092035C58500DABC36 /* pocketIBKUITests.swift */; };
 		81636671183C1D2C4B8069A6 /* Pods_pocketIBK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */; };
+		C1B7F47B20923D63009F3F8D /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F47A20923D63009F3F8D /* GetData.swift */; };
+		C1B7F47D20923D8A009F3F8D /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F47C20923D8A009F3F8D /* MoyaService.swift */; };
+		C1B7F47F20923DCD009F3F8D /* TodayJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F47E20923DCD009F3F8D /* TodayJSONObject.swift */; };
+		C1B7F48120923DE7009F3F8D /* TodayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F48020923DE7009F3F8D /* TodayObject.swift */; };
+		C1B7F48320923E27009F3F8D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F48220923E27009F3F8D /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		3655A30B2035C58500DABC36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		573EEAC3F19599E190AC1064 /* Pods-pocketIBK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pocketIBK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pocketIBK/Pods-pocketIBK.debug.xcconfig"; sourceTree = "<group>"; };
 		806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pocketIBK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B7F47A20923D63009F3F8D /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		C1B7F47C20923D8A009F3F8D /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
+		C1B7F47E20923DCD009F3F8D /* TodayJSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayJSONObject.swift; sourceTree = "<group>"; };
+		C1B7F48020923DE7009F3F8D /* TodayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayObject.swift; sourceTree = "<group>"; };
+		C1B7F48220923E27009F3F8D /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3627B748206E9BB5001441FA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3627B749206E9C05001441FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,20 +99,6 @@
 			name = Views;
 			path = pocketIBK/Views;
 			sourceTree = SOURCE_ROOT;
-		};
-		3627B74A206E9C16001441FA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3627B74B206E9C55001441FA /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
-			sourceTree = "<group>";
 		};
 		3655A2DD2035C58500DABC36 = {
 			isa = PBXGroup;
@@ -136,10 +125,10 @@
 		3655A2E82035C58500DABC36 /* pocketIBK */ = {
 			isa = PBXGroup;
 			children = (
-				3627B74B206E9C55001441FA /* Network */,
-				3627B74A206E9C16001441FA /* Controller */,
+				C1B7F47920923D55009F3F8D /* Networking */,
+				C1B7F47820923D4F009F3F8D /* Controller */,
+				C1B7F47720923D48009F3F8D /* Models */,
 				3627B749206E9C05001441FA /* Views */,
-				3627B748206E9BB5001441FA /* Models */,
 				3655A2E92035C58500DABC36 /* AppDelegate.swift */,
 				3655A2EB2035C58500DABC36 /* ViewController.swift */,
 				3655A2ED2035C58500DABC36 /* Main.storyboard */,
@@ -183,6 +172,32 @@
 				806B32FE23E3CE50E060BC67 /* Pods_pocketIBK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B7F47720923D48009F3F8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1B7F47E20923DCD009F3F8D /* TodayJSONObject.swift */,
+				C1B7F48020923DE7009F3F8D /* TodayObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C1B7F47820923D4F009F3F8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1B7F48220923E27009F3F8D /* MainTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1B7F47920923D55009F3F8D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C1B7F47A20923D63009F3F8D /* GetData.swift */,
+				C1B7F47C20923D8A009F3F8D /* MoyaService.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +401,11 @@
 			files = (
 				3655A2EC2035C58500DABC36 /* ViewController.swift in Sources */,
 				3627B74D206E9EF8001441FA /* MainTableViewCell.swift in Sources */,
+				C1B7F48120923DE7009F3F8D /* TodayObject.swift in Sources */,
+				C1B7F47F20923DCD009F3F8D /* TodayJSONObject.swift in Sources */,
+				C1B7F48320923E27009F3F8D /* MainTableViewController.swift in Sources */,
+				C1B7F47B20923D63009F3F8D /* GetData.swift in Sources */,
+				C1B7F47D20923D8A009F3F8D /* MoyaService.swift in Sources */,
 				3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
