@@ -9,42 +9,28 @@
 import Foundation
 import UIKit
 
-struct TodayObject{
-    
-    var theaterId: String
-    var theaterName: String
-    var movieId: String
-    var movieTitle: String
-    var movieGenre: String
-    var movieRating: String
+struct TodayObject {
+    let theaterId: String
+    let theaterName: String
+    let movieId: String
+    let movieTitle: String
+    let movieGenre: String
+    let movieRating: String
     var movieImage: UIImage?
-    var movieDuration: Int
-    var time: Date?
-    var info: String
-    
-    init(_theaterId: String, _theaterName: String, _movieId: String, _movieTitle: String, _movieGenre: String, _movieRating: String, _movieImage: UIImage, _movieDuration: Int, _time: Date, _info: String) {
-        self.theaterId = _theaterId
-        self.theaterName = _theaterName
-        self.movieId = _movieId
-        self.movieTitle = _movieTitle
-        self.movieGenre = _movieGenre
-        self.movieRating = _movieRating
-        self.movieImage = _movieImage
-        self.movieDuration = _movieDuration
-        self.time = _time
-        self.info = _info
-    }
-    init(_theaterId: String, _theaterName: String, _movieId: String, _movieTitle: String, _movieGenre: String, _movieRating: String, _movieInfo: String) {
-        self.theaterId = _theaterId
-        self.theaterName = _theaterName
-        self.movieId = _movieId
-        self.movieTitle = _movieTitle
-        self.movieGenre = _movieGenre
-        self.movieRating = _movieRating
+    let movieDuration: Int
+    let time: Date?
+    let info: String
+    init(theaterId: String, theaterName: String, movieId: String,
+         movieTitle: String, movieGenre: String, movieRating: String, movieInfo: String) {
+        self.theaterId = theaterId
+        self.theaterName = theaterName
+        self.movieId = movieId
+        self.movieTitle = movieTitle
+        self.movieGenre = movieGenre
+        self.movieRating = movieRating
         self.movieImage = nil
         self.movieDuration = -1
         self.time = nil
-        self.info = _movieInfo
+        self.info = movieInfo
     }
-    
 }

@@ -9,44 +9,37 @@
 import Foundation
 import Moya
 
-enum MoyaService {
+enum MovieService {
     case today
     case movie(id: String)
     case theater(id: String)
 }
 
-extension MoyaService: TargetType {
+extension MovieService: TargetType {
     var sampleData: Data {
         return Data()
     }
-    
-    
     var baseURL: URL { return URL(string: "https://dev.sengaro.com/cinema")! }
     var path: String {
         switch self {
         case .today:
             return "/performance/today.json"
-        case .movie(let id):
-            return "/movie/\(id).json"
-        case .theater(let id):
-            return "/theater/\(id).json"
+        case .movie(let identification):
+            return "/movie/\(identification).json"
+        case .theater(let identification):
+            return "/theater/\(identification).json"
         }
     }
-    
     var method: Moya.Method {
         switch self {
         case .today, .movie(_), .theater(_):
             return .get
         }
     }
-    
     var task: Task {
         return .requestPlain
     }
-    
     var headers: [String: String]? {
         return nil
     }
 }
-
-

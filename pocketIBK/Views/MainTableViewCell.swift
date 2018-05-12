@@ -9,23 +9,26 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
-
     @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieGenre: UILabel!
     @IBOutlet weak var movieInfo: UILabel!
     @IBOutlet weak var cinemaDestAndTime: UILabel!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var todayProgram: TodayObject? {
+        didSet {
+            guard let todayProgram = todayProgram else {
+                return
+            }
+            movieImage.image = todayProgram.movieImage
+            movieTitle.text = todayProgram.movieTitle
+            movieGenre.text = todayProgram.movieGenre
+            movieInfo.text = todayProgram.info
+            cinemaDestAndTime.text = todayProgram.theaterId
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
+/*extension UITableViewCell {
+    public class func defaultIdentifier() -> String {
+        return NSStringFromClass(self)
+    }
+}*/

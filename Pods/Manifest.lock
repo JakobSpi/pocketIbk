@@ -7,20 +7,32 @@ PODS:
     - Result (~> 3.0)
   - ObjectMapper (3.1.0)
   - Result (3.2.4)
+  - SwiftLint (0.25.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Moya
   - ObjectMapper
+  - SwiftLint
   - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Moya
+    - ObjectMapper
+    - Result
+    - SwiftLint
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
   Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 9d9b73691677c364a4346182a33dda29b3da67c6
+PODFILE CHECKSUM: 92f5cd203676067d107cc96d9a410067a9970cc8
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.2

@@ -8,18 +8,15 @@
 
 import Foundation
 
-struct TodayJSONObject:Decodable{
-    
-    
-    var theaterId: String
-    var theaterName: String
-    var movieId: String
-    var movieTitle: String
-    var movieGenre: String
-    var movieRating: String
-    var movieImageUrl: String
-    var movieDuration: Int
-    var time: Int
-    var info: String
-     
+struct TodayJSONObject: Decodable {
+    let theaterId: String
+    let theaterName: String
+    let movieId: String
+    let movieTitle: String
+    let movieGenre: String
+    let movieRating: String
+    let movieImageUrl: String
+    let movieDuration: Int
+    let time: Int
+    let info: String
 }
