@@ -13,29 +13,27 @@ class StartScreenTableViewController: UITableViewController {
     var todayProgram = [TodayObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.getTodayProgram { [weak self] programJSON in
-            guard !programJSON.isEmpty else {
-                return
+        api.getTodayProgram { [weak self] result in
+            switch result {
+            case .success(let json):
+                guard let movieJsons = json["data"] as? [[String: Any]] else {
+                    return
+                }
+                self?.todayProgram = movieJsons.compactMap { TodayObject(json: $0) }
+                self?.downloadImages()
+                self?.tableView.reloadData()
+            case .failure(let error):
+                print(error)
             }
-            self?.setData(data: programJSON)
-            self?.tableView.reloadData()
         }
     }
-    func setData(data: [TodayJSONObject]) {
-        var counter = 0
-        for movieJSON in data {
-            let movie = TodayObject(theaterId: movieJSON.theaterId,
-                                    theaterName: movieJSON.theaterName, movieId: movieJSON.movieId,
-                                    movieTitle: movieJSON.movieTitle, movieGenre: movieJSON.movieGenre,
-                                    movieRating: movieJSON.movieRating, movieInfo: movieJSON.info)
-            todayProgram.append(movie)
-            self.downloadImages(movie: todayProgram[counter], counter: counter)
-            self.tableView.reloadData()
-            counter += 1
+    func downloadImages() {
+        for counter in 0..<todayProgram.count {
+            downloadImages(movie: todayProgram[counter], counter: counter)
         }
     }
     func setImage(image: UIImage, counter: Int) {
-        todayProgram[counter].movieImage = image
+        todayProgram[counter].setImage(image: image)
         let indexPath = IndexPath(item: counter, section: 0)
         tableView.reloadRows(at: [indexPath], with: .automatic)
     }
@@ -89,7 +87,7 @@ extension StartScreenTableViewController {
         let foregroundColor = "ffffff"
         let urlComponents = URLComponents.init(resolutionWidth: width, resolutionHeight: height,
                                                backgroundColor: backgroundColor, foregroundColor: foregroundColor,
-                                               movieText: movie.movieTitle)
+                                               movieText: movie.title)
         let url = urlComponents.getEscapedUrl()
         print(url)
         self.api.downloadImage(url: URL(string: url)!, counter: counter, completion: { [weak self] (image, counter) in

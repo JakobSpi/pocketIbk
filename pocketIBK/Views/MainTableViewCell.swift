@@ -19,9 +19,9 @@ class MainTableViewCell: UITableViewCell {
             guard let todayProgram = todayProgram else {
                 return
             }
-            movieImage.image = todayProgram.movieImage
-            movieTitle.text = todayProgram.movieTitle
-            movieGenre.text = todayProgram.movieGenre
+            movieImage.image = todayProgram.image
+            movieTitle.text = todayProgram.title
+            movieGenre.text = todayProgram.genre
             movieInfo.text = todayProgram.info
             cinemaDestAndTime.text = todayProgram.theaterId
         }

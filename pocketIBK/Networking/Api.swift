@@ -11,18 +11,41 @@ import Moya
 import SwiftyJSON
 import ObjectMapper
 
+enum ApiError: Error {
+    case invalidResponse
+    case invalidStatusCode(Int)
+    case noData(Error?)
+    case invalidJson
+}
+
+enum ApiResult<T, E: Error> {
+    case success(T)
+    case failure(E)
+}
 class Api {
-    func getTodayProgram(completion: @escaping([TodayJSONObject]) -> Void) {
-        var todayProgram = [TodayJSONObject]()
+    func getTodayProgram(completion: @escaping((ApiResult<[String: Any], ApiError>)) -> Void) {
         let provider = MoyaProvider<MovieService>()
         provider.request(.today) { result in
+            var resultJSON: ApiResult<[String: Any], ApiError>
             switch result {
             case let .success(moyaResponse):
-                    guard let today =  try? JSONDecoder().decode([TodayJSONObject].self, from: moyaResponse.data) else {
-                        return
-                    }
-                    todayProgram = today
-                    completion(todayProgram)
+                guard let jsonObject = try? JSONSerialization.jsonObject(with: moyaResponse.data,
+                                                                         options: .allowFragments) else {
+                    resultJSON = .failure(.invalidJson)
+                    return
+                }
+                var json: [String: Any]?
+                if let jsonArray = jsonObject as? [[String: Any]] {
+                    json = ["data": jsonArray]
+                } else if let jsonDictionary = jsonObject as? [String: Any] {
+                    json = jsonDictionary
+                }
+                if let json = json {
+                    resultJSON = .success(json)
+                } else {
+                    resultJSON = .failure(.invalidJson)
+                }
+                completion(resultJSON)
             case let .failure(error):
                 print("FAIL = \(error)")
             }
