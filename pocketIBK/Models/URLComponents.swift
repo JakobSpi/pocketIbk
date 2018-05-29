@@ -17,6 +17,6 @@ struct URLComponents {
     func getEscapedUrl() -> String {
         let allowedCharacterSet = (CharacterSet(charactersIn: "!§$%&/()=?`¡“¶¢[]|{}≠¿ -.,;:_").inverted)
         let escapedTextForUrl = movieText.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet)
-        return "https://dummyimage.com/\(resolutionWidth)x/\(resolutionHeight)/\(backgroundColor)/\(foregroundColor).png?text=\(escapedTextForUrl!)"
+        return "https://dummyimage.com/\(resolutionWidth)x\(resolutionHeight)/\(backgroundColor)/\(foregroundColor).png?text=\(escapedTextForUrl!)"
     }
 }

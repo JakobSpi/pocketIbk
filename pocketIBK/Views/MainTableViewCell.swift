@@ -9,22 +9,18 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
-    @IBOutlet weak var movieImage: UIImageView!
-    @IBOutlet weak var movieTitle: UILabel!
-    @IBOutlet weak var movieGenre: UILabel!
-    @IBOutlet weak var movieInfo: UILabel!
-    @IBOutlet weak var cinemaDestAndTime: UILabel!
-    var todayProgram: TodayObject? {
-        didSet {
-            guard let todayProgram = todayProgram else {
-                return
-            }
-            movieImage.image = todayProgram.image
-            movieTitle.text = todayProgram.title
-            movieGenre.text = todayProgram.genre
-            movieInfo.text = todayProgram.info
-            cinemaDestAndTime.text = todayProgram.theaterId
-        }
+    @IBOutlet weak var mainCollectionView: UICollectionView!
+    func setCollectionViewDelegate<D: UICollectionViewDelegate, E: UICollectionViewDataSource>
+        (dataSource: D, delegate: E, forRow row: Int) {
+        mainCollectionView.delegate = dataSource
+        mainCollectionView.dataSource = delegate
+        mainCollectionView.tag = row + 1
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0.0
+        layout.minimumInteritemSpacing = 0.0
+        mainCollectionView.setCollectionViewLayout(layout, animated: true)
+        mainCollectionView.reloadData()
     }
 }
 /*extension UITableViewCell {

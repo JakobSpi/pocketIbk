@@ -52,7 +52,6 @@ struct TodayObject {
         self.image = image
     }
 }
-
 fileprivate extension Date {
     init(milliseconds: TimeInterval) {
         self.init(timeIntervalSince1970: milliseconds / 1000)
