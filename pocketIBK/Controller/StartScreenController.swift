@@ -32,6 +32,8 @@ class StartScreenController: UIViewController, UITableViewDelegate, UITableViewD
                     self?.downloadImages()
                 case .failure(let error):
                     print(error)
+                    self?.showAlert(title: "You are not connected to the internet!",
+                              message: "Please connect to the internet.")
                 }
             }
         }

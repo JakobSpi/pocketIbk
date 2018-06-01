@@ -15,11 +15,6 @@ class MainTableViewCell: UITableViewCell {
         mainCollectionView.delegate = dataSource
         mainCollectionView.dataSource = delegate
         mainCollectionView.tag = row + 1
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 0.0
-        layout.minimumInteritemSpacing = 0.0
-        mainCollectionView.setCollectionViewLayout(layout, animated: true)
         mainCollectionView.reloadData()
     }
 }
