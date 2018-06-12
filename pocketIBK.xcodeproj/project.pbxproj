@@ -18,6 +18,8 @@
 		C10512A820B8C9B1009D24E4 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10512A720B8C9B1009D24E4 /* MainCollectionViewCell.swift */; };
 		C10CC21920B5FE720089334B /* TodayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10CC21820B5FE720089334B /* TodayObject.swift */; };
 		C10CC21B20B741330089334B /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10CC21A20B741330089334B /* InternetConnection.swift */; };
+		C163F13E20C348F000A89A50 /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C163F13D20C348F000A89A50 /* MovieObject.swift */; };
+		C199805620C20B9E001A6334 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199805520C20B9E001A6334 /* DetailViewController.swift */; };
 		C1B7F47B20923D63009F3F8D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F47A20923D63009F3F8D /* Api.swift */; };
 		C1B7F47D20923D8A009F3F8D /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F47C20923D8A009F3F8D /* MovieService.swift */; };
 		C1B7F48320923E27009F3F8D /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7F48220923E27009F3F8D /* StartScreenController.swift */; };
@@ -63,6 +65,8 @@
 		C10512A720B8C9B1009D24E4 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		C10CC21820B5FE720089334B /* TodayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayObject.swift; sourceTree = "<group>"; };
 		C10CC21A20B741330089334B /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
+		C163F13D20C348F000A89A50 /* MovieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
+		C199805520C20B9E001A6334 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C1B7F47A20923D63009F3F8D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		C1B7F47C20923D8A009F3F8D /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		C1B7F48220923E27009F3F8D /* StartScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 				C1E2F8CA20A7908C00195E64 /* URLComponents.swift */,
 				C10CC21820B5FE720089334B /* TodayObject.swift */,
 				C1F41E8820BB65A000305848 /* HeaderTableViewModel.swift */,
+				C163F13D20C348F000A89A50 /* MovieObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B7F48220923E27009F3F8D /* StartScreenController.swift */,
+				C199805520C20B9E001A6334 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,11 +420,13 @@
 				C10CC21920B5FE720089334B /* TodayObject.swift in Sources */,
 				C1E2F8CB20A7908C00195E64 /* URLComponents.swift in Sources */,
 				C1F41E8920BB65A000305848 /* HeaderTableViewModel.swift in Sources */,
+				C199805620C20B9E001A6334 /* DetailViewController.swift in Sources */,
 				C10CC21B20B741330089334B /* InternetConnection.swift in Sources */,
 				3627B74D206E9EF8001441FA /* MainTableViewCell.swift in Sources */,
 				C1B7F48320923E27009F3F8D /* StartScreenController.swift in Sources */,
 				C1B7F47B20923D63009F3F8D /* Api.swift in Sources */,
 				C1F41E8720BB648900305848 /* HeaderTableViewCell.swift in Sources */,
+				C163F13E20C348F000A89A50 /* MovieObject.swift in Sources */,
 				C10512A820B8C9B1009D24E4 /* MainCollectionViewCell.swift in Sources */,
 				C1B7F47D20923D8A009F3F8D /* MovieService.swift in Sources */,
 				3655A2EA2035C58500DABC36 /* AppDelegate.swift in Sources */,

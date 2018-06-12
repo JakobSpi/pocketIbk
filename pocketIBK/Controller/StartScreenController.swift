@@ -13,6 +13,7 @@ class StartScreenController: UIViewController, UITableViewDelegate, UITableViewD
     let api = Api()
     var todayProgram = [TodayObject]()
     var todayProgramSorted = [[TodayObject]]()
+    var movieChoice: TodayObject?
     var alreadyDownloadedPicturesFromMovie = [String: UIImage]()
     var completeMovieObjects = 0
     var headerImage: UIImage?
@@ -108,6 +109,11 @@ class StartScreenController: UIViewController, UITableViewDelegate, UITableViewD
         print(indexPath.row)
         tableViewCell.setCollectionViewDelegate(dataSource: self, delegate: self, forRow: indexPath.row)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? DetailViewController {
+            detailsVC.movieChoice = self.movieChoice
+        }
+    }
     func checkInternetConnection() -> Bool {
         if InternetConnection.isConnectedToNetwork() {
             return true
@@ -186,6 +192,10 @@ extension StartScreenController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 200)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        movieChoice = todayProgramSorted[collectionView.tag-2][indexPath.row]
+        performSegue(withIdentifier: "detailViewSegue", sender: self)
     }
     func downloadImages(movie: TodayObject, counter: Int) {
         let width = UIScreen.main.nativeScale*90

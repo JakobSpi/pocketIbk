@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 struct URLComponents {
+    // MARK: - Properties
     let resolutionWidth: CGFloat
     let resolutionHeight: CGFloat
     let backgroundColor: String
     let foregroundColor: String
     let movieText: String
+    // MARK: - Functions
     func getEscapedUrl() -> String {
         let allowedCharacterSet = (CharacterSet(charactersIn: "!§$%&/()=?`¡“¶¢[]|{}≠¿ -.,;:_").inverted)
         let escapedTextForUrl = movieText.addingPercentEncoding(withAllowedCharacters: allowedCharacterSet)

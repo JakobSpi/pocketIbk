@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct HeaderTableViewModel {
+    // MARK: - Properties
     let image: UIImage
     let labelText: String
 }

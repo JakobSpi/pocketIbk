@@ -56,6 +56,32 @@ class Api {
             completion(data, response, error)
             }.resume()
     }
+    func getMovieDetail(id: String, completion: @escaping((ApiResult<[String: Any], ApiError>)) -> Void) {
+        let provider = MoyaProvider<MovieService>()
+        provider.request(.movie(id: id)) { result in
+            var resultJSON: ApiResult<[String: Any], ApiError>
+            switch result {
+            case let .success(moyaResponse):
+                guard let jsonObject = try? JSONSerialization.jsonObject(with: moyaResponse.data,
+                                                                         options: .allowFragments) else {
+                                                                            resultJSON = .failure(.invalidJson)
+                                                                            return
+                }
+                var json: [String: Any]?
+                if let jsonDictionary = jsonObject as? [String: Any] {
+                    json = jsonDictionary
+                }
+                if let json = json {
+                    resultJSON = .success(json)
+                } else {
+                    resultJSON = .failure(.invalidJson)
+                }
+                completion(resultJSON)
+            case let .failure(error):
+                print("FAIL = \(error)")
+            }
+        }
+    }
     func downloadImage(url: URL, counter: Int, completion: @escaping (UIImage, Int) -> Void) {
         print("Download Started")
         getDataFromUrl(url: url) { data, _, error in
